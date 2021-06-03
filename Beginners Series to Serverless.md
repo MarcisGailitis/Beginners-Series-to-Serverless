@@ -25,7 +25,7 @@
 
 ## 01. What is Serverless and why is it so popular now
 
-Serverless - Build application without thinking about servers. (Not thinking about things like runtime, web framework, CPU power, memory, etc). 
+Serverless - Build application without thinking about servers. (Not thinking about things like runtime, web framework, CPU power, memory, etc).
 
 Serverless examples: FaaS - Functions as a Service
 
@@ -39,18 +39,18 @@ module.exports = async function (context, req) {
 }
 ```
 
-Why us Serverless so popular?
+Why Serverless is so popular?
 
 - cheap - only pay for what you use
-- easy - much less to setup and deploy. Put your code in cloud and it "just works"
+- easy - much easier to do setup and deploy. Put your code in the cloud and it "just works"
 - practical - good for all sorts of applications from microservices to API to one-off business needs
 
 ## 02. Core principles of Serverless
 
-Pay as you Go | Event Driven | Stateless
+Pay as you Go | Event-Driven | Stateless
 :--- | :--- | :---
-You only pay for what you use | Stand-alone service that communicate with each other and with other applications via events | Your service only run whn they are responding to an event.
-how many times + compute resource while running. NEVER pay if function is not running. | HTTP request, timer, record  added to DB, file  uploaded |  No long-running processes
+You only pay for what you use | Stand-alone service that communicates with each other and with other applications via events | Your service only runs when they are responding to an event.
+how many times + compute resource while running. NEVER pay if a function is not running. | HTTP request, timer, record  added to DB, file  uploaded |  No long-running processes
 
 ## 03. Use cases of Serverless
 
@@ -79,4 +79,7 @@ Bots:
 ## 04. Create your first Serverless Function using VS Code
 
 1) Install Azure Functions
-2) 
+2) Create New Project -> Select Sub-directyory -> Python -> HTTP trigger -> `<provide a function name>` -> Anonymous
+3) func start
+4) <http://localhost:7071/api/products-get?name=your_name>
+
